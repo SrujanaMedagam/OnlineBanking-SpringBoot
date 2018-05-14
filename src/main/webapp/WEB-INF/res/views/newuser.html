@@ -1,0 +1,121 @@
+
+
+
+<form action="" name="userForm" ng-submit="submitForm()" novalidate>
+	<div ng-controller="newUserAccessPermissionController" class="homepage">
+		<h3 style="font-family: Georgia; text-align: center;">Please
+			Enter Details.</h3>
+
+		<table>
+			<tr>
+				<td><label class="labels"
+					style="margin-top: 30px; margin-left: 50px" for="comment">AccountNumber</label></td>
+				<td><input style="margin-top: 30px; margin-left: 30px"
+					type="text" class="form-control" id="accountNumber"
+					ng-model="accountNumber" ng-required="true" /></td>
+
+				<td><label class="labels"
+					style="margin-top: 30px; margin-left: 100px" for="comment">AccountName</label></td>
+				<td><input style="margin-top: 30px; margin-left: 30px"
+					type="text" class="form-control" id="accountName"
+					ng-model="accountName" ng-click="checkAccountNumber()" /></td>
+			<tr>
+				<td><span id="123"
+					style="color: red; margin-top: 10px; margin-left: 30px;"></span></td>
+				<td><span id="checkEmpIderrorMessage"
+					style="color: red;display: none; margin-top: 10px; margin-left: 30px;">AccountNumber
+						 already exists</span></td>
+			</tr>
+			</tr>
+
+			<tr>
+				<td><label class="labels"
+					style="margin-top: 10px; margin-left: 50px" for="comment">Username</label></td>
+				<td><input style="margin-top: 10px; margin-left: 30px"
+					type="text" class="form-control" id="username" ng-model="username"/></td>
+				<td><label class="labels"
+					style="margin-top: 10px; margin-left: 100px" for="comment">Password</label></td>
+				<td><input style="margin-top: 10px; margin-left: 30px"
+					type="password" class="form-control" id="password"
+					ng-model="password" ng-click="checkuserID()" /></td>
+			<tr>
+				<td><span id="123"
+					style="color: red; margin-top: 10px; margin-left: 30px;"></span></td>
+				<td><span id="checkUserIderrorMessage"
+					style="color: red;display: none; margin-top: 10px; margin-left: 30px;">UserID
+						already exists</span></td>
+			</tr>
+			</tr>
+			<tr>
+				<td><label class="labels"
+					style="margin-top: 10px; margin-left: 50px" for="comment">Address</label></td>
+				<td><input style="margin-top: 10px; margin-left: 30px"
+					type="textbox" class="form-control" id="address" ng-model="address" /></td>
+
+				<td><label class="labels"
+					style="margin-top: 10px; margin-left: 100px" for="comment">E-mail
+						ID</label></td>
+				<td><input style="margin-top: 10px; margin-left: 30px"
+					type="text" class="form-control" id="emailId" ng-model="emailId" /></td>
+			</tr>
+			<tr>
+				<td><label class="labels"
+					style="margin-top: 30px; margin-left: 50px" for="comment">phoneNumber</label></td>
+				<td><input style="margin-top: 30px; margin-left: 30px"
+					type="text" class="form-control" id="phoneNumber"
+					ng-model="phoneNumber" /></td>
+
+				<td><label class="labels"
+					style="margin-top: 30px; margin-left: 100px" for="comment">PAN
+						Number</label></td>
+				<td><input style="margin-top: 30px; margin-left: 30px"
+					type="text" class="form-control" id="panNumber"
+					ng-model="panNumber" /></td>
+			</tr>
+			<tr>
+				<td><label class="labels"
+					style="margin-top: 30px; margin-left: 50px" for="comment">
+						Aadhar Number</label></td>
+				<td><input style="margin-top: 30px; margin-left: 30px"
+					type="text" class="form-control" id="aadharNumber"
+					ng-model="aadharNumber" /></td>
+
+				<td><label class="labels"
+					style="margin-top: 30px; margin-left: 100px" for="comment">AccountType</label></td>
+				<td><select style="margin-top: 30px; margin-left: 30px"
+					id="accountType" class="form-control" ng-model="accountType">
+						<option value="">Please Select:</option> Savings/Checking
+						Acct/Current Acct
+						<option value="Savings">Savings</option>
+						<option value="CheckingAccount">Checking Account</option>
+						<option value="CurrentAccount">Current Account</option>
+				</select></td>
+			</tr>
+			<tr>
+				<td><label class="labels"
+					style="margin-top: 30px; margin-left: 50px" for="comment">AccountOpenDate</label></td>
+				<td><input style="margin-top: 30px; margin-left: 30px"
+					type="date" class="form-control" id="date" ng-model="date" /></td>
+			</tr>
+			<tr>
+				<td><label class="labels"
+					style="margin-top: 30px; margin-left: 50px" for="comment"></label></td>
+					<td><label class="labels"
+					style="margin-top: 30px; margin-left: 50px" for="comment"></label></td>
+					<td><label class="labels"
+					style="margin-top: 30px; margin-left: 20px" for="comment"></label></td>
+				<td><button
+						style="margin-top: 30px; margin-left: 80px"
+						class="btn btn-success" id="submitBtn" ng-click="onSubmit()">Submit</button>
+
+				 <input  style="margin-top: 30px; margin-left:0px" id="reset" type="reset"
+					class="btn btn-success" /></td>
+			</tr>
+
+
+		</table>
+	</div>
+</form>
+
+
+

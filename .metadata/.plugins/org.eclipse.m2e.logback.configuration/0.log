@@ -1,0 +1,205 @@
+2016-12-29 12:08:15,711 [Worker-20] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.valuelabs:SpringProject:0.0.1-SNAPSHOT @ D:\New\SpringProject\pom.xml.
+2016-12-29 12:08:21,344 [Worker-20] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /SpringProject/src/main/java
+2016-12-29 12:08:21,345 [Worker-20] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /SpringProject/src/main/resources
+2016-12-29 12:08:21,346 [Worker-20] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /SpringProject/src/test/java
+2016-12-29 12:08:21,346 [Worker-20] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /SpringProject/src/test/resources
+2016-12-29 12:08:21,966 [Worker-20] ERROR o.e.m2e.wtp.WTPProjectConfigurator - Unable to configure SpringProject
+org.eclipse.m2e.wtp.MarkedException: Unable to configure SpringProject
+	at org.eclipse.m2e.wtp.AbstractProjectConfiguratorDelegate.configureProject(AbstractProjectConfiguratorDelegate.java:98) ~[na:na]
+	at org.eclipse.m2e.wtp.WTPProjectConfigurator.configure(WTPProjectConfigurator.java:71) ~[na:na]
+	at org.eclipse.m2e.core.project.configurator.AbstractLifecycleMapping.configure(AbstractLifecycleMapping.java:120) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager$3.call(ProjectConfigurationManager.java:501) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager$3.call(ProjectConfigurationManager.java:1) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.updateProjectConfiguration(ProjectConfigurationManager.java:494) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.configureNewMavenProjects(ProjectConfigurationManager.java:281) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager$1.call(ProjectConfigurationManager.java:168) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager$1.call(ProjectConfigurationManager.java:1) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:176) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:151) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:99) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1355) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.internal.project.ProjectConfigurationManager.importProjects(ProjectConfigurationManager.java:136) [org.eclipse.m2e.core_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.ui.internal.wizards.ImportMavenProjectsJob$1.doCreateMavenProjects(ImportMavenProjectsJob.java:68) [org.eclipse.m2e.core.ui_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.ui.internal.wizards.AbstractCreateMavenProjectsOperation.run(AbstractCreateMavenProjectsOperation.java:62) [org.eclipse.m2e.core.ui_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.m2e.core.ui.internal.wizards.ImportMavenProjectsJob.runInWorkspace(ImportMavenProjectsJob.java:77) [org.eclipse.m2e.core.ui_1.6.2.20150902-0002.jar:na]
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39) [org.eclipse.core.resources_3.10.1.v20150725-1910.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55) [org.eclipse.core.jobs_3.7.0.v20150330-2103.jar:na]
+Caused by: org.eclipse.core.runtime.CoreException: One or more constraints have not been satisfied.
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProject.modifyInternal(FacetedProject.java:363) ~[na:na]
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProject.mergeChangesInternal(FacetedProject.java:1181) ~[na:na]
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProject.access$2(FacetedProject.java:1117) ~[na:na]
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProject$1.run(FacetedProject.java:324) ~[na:na]
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2241) ~[org.eclipse.core.resources_3.10.1.v20150725-1910.jar:na]
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProject.modify(FacetedProject.java:339) ~[na:na]
+	at org.eclipse.m2e.wtp.WebProjectConfiguratorDelegate.configure(WebProjectConfiguratorDelegate.java:133) ~[na:na]
+	at org.eclipse.m2e.wtp.AbstractProjectConfiguratorDelegate.configureProject(AbstractProjectConfiguratorDelegate.java:94) ~[na:na]
+	... 20 common frames omitted
+2016-12-29 12:08:22,577 [Worker-20] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 9 sec
+2016-12-29 12:08:24,921 [Worker-28] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-12-29 12:08:24,925 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-12-29 12:08:24,927 [Worker-28] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-12-29 12:08:24,928 [Worker-28] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-12-29 12:16:44,994 [Worker-29] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-12-29 12:16:44,997 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-12-29 12:16:44,998 [Worker-29] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-12-29 12:16:44,999 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-12-29 12:17:53,071 [Worker-31] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-12-29 12:17:53,077 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-12-29 12:17:53,080 [Worker-31] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-12-29 12:17:53,081 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-12-29 12:18:00,163 [main] INFO  o.e.m2e.actions.ExecutePomAction - Creating new launch configuration
+2016-12-29 12:18:11,224 [Worker-36] INFO  o.e.m.i.launch.MavenLaunchDelegate - D:\New\SpringProject
+2016-12-29 12:18:11,224 [Worker-36] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B tomcat8:run
+2016-12-29 12:18:49,221 [main] INFO  o.e.m2e.actions.ExecutePomAction - Using existing launch configuration
+2016-12-29 12:18:49,305 [Worker-33] INFO  o.e.m.i.launch.MavenLaunchDelegate - D:\New\SpringProject
+2016-12-29 12:18:49,305 [Worker-33] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B tomcat8:run
+2016-12-29 12:18:58,868 [main] INFO  o.e.m2e.actions.ExecutePomAction - Creating new launch configuration
+2016-12-29 12:19:07,284 [Worker-34] INFO  o.e.m.i.launch.MavenLaunchDelegate - D:\New\SpringProject
+2016-12-29 12:19:07,284 [Worker-34] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B 
+2016-12-29 12:19:14,532 [Worker-36] INFO  o.e.m.i.launch.MavenLaunchDelegate - D:\New\SpringProject
+2016-12-29 12:19:14,532 [Worker-36] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B clean
+2016-12-29 12:19:15,866 [Worker-33] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-12-29 12:19:15,869 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-12-29 12:19:15,870 [Worker-33] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-12-29 12:19:15,870 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-12-29 12:19:15,870 [Worker-33] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of SpringProject
+2016-12-29 12:19:15,871 [Worker-33] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for SpringProject
+2016-12-29 12:19:15,877 [Worker-33] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-12-29 12:19:25,029 [main] INFO  o.e.m2e.actions.ExecutePomAction - Creating new launch configuration
+2016-12-29 12:19:32,225 [Worker-33] INFO  o.e.m.i.launch.MavenLaunchDelegate - D:\New\SpringProject
+2016-12-29 12:19:32,225 [Worker-33] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B tomcat7:run
+2016-12-29 12:21:40,549 [Worker-33] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-12-29 12:21:40,550 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-12-29 12:21:40,551 [Worker-33] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-12-29 12:21:40,551 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-12-29 12:21:41,614 [Worker-44] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-12-29 12:21:41,615 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-12-29 12:21:41,617 [Worker-44] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-12-29 12:21:41,617 [Worker-44] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-12-29 12:23:19,827 [Worker-43] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-12-29 12:23:19,830 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-12-29 12:23:19,833 [Worker-43] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-12-29 12:23:19,834 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-12-29 12:23:27,180 [Worker-35] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-12-29 12:23:27,181 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-12-29 12:23:27,182 [Worker-35] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-12-29 12:23:27,183 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-12-29 12:23:32,066 [main] INFO  o.e.m2e.actions.ExecutePomAction - Creating new launch configuration
+2016-12-29 12:23:38,631 [Worker-45] INFO  o.e.m.i.launch.MavenLaunchDelegate - D:\New\SpringProject
+2016-12-29 12:23:38,631 [Worker-45] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B tomcat7:run
+2016-12-29 12:24:06,941 [main] INFO  o.e.m2e.actions.ExecutePomAction - Creating new launch configuration
+2016-12-29 12:24:14,469 [Worker-37] INFO  o.e.m.i.launch.MavenLaunchDelegate - D:\New\SpringProject
+2016-12-29 12:24:14,469 [Worker-37] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B Tomcat7:run
+2016-12-29 12:24:32,042 [Worker-47] INFO  o.e.m.i.launch.MavenLaunchDelegate - D:\New\SpringProject
+2016-12-29 12:24:32,042 [Worker-47] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B tomcat7:run
+2016-12-29 12:25:19,631 [Worker-38] INFO  o.e.m.i.launch.MavenLaunchDelegate - D:\New\SpringProject
+2016-12-29 12:25:19,631 [Worker-38] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B tomcat8:run
+2016-12-29 12:26:26,202 [Worker-46] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-12-29 12:26:26,203 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-12-29 12:26:26,204 [Worker-46] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-12-29 12:26:26,205 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-12-29 12:27:50,153 [Worker-46] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-12-29 12:27:50,154 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-12-29 12:27:50,156 [Worker-46] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-12-29 12:27:50,157 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-12-29 12:28:05,900 [Worker-47] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-12-29 12:28:05,901 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-12-29 12:28:05,903 [Worker-47] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-12-29 12:28:05,904 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-12-29 12:28:29,991 [Worker-46] INFO  o.e.m.i.launch.MavenLaunchDelegate - D:\New\SpringProject
+2016-12-29 12:28:29,991 [Worker-46] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B tomcat7:run
+2016-12-29 12:32:26,551 [main] INFO  o.e.m2e.actions.ExecutePomAction - Creating new launch configuration
+2016-12-29 12:32:43,390 [Worker-52] INFO  o.e.m.i.launch.MavenLaunchDelegate - D:\New\SpringProject
+2016-12-29 12:32:43,391 [Worker-52] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B tomcat7:run
+2016-12-29 16:47:46,149 [Worker-97] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-12-29 16:47:46,151 [Worker-97] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-12-29 16:47:46,152 [Worker-97] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-12-29 16:47:46,154 [Worker-97] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-12-29 16:49:06,686 [Worker-96] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-12-29 16:49:06,695 [Worker-96] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-12-29 16:49:06,696 [Worker-96] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-12-29 16:49:06,699 [Worker-96] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-12-29 16:49:32,431 [Worker-96] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2016-12-29 16:49:32,891 [Worker-96] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.valuelabs:SpringProject:0.0.1-SNAPSHOT @ D:\New\SpringProject\pom.xml.
+2016-12-29 16:49:34,145 [Worker-96] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /SpringProject/src/main/java
+2016-12-29 16:49:34,146 [Worker-96] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /SpringProject/src/main/resources
+2016-12-29 16:49:34,146 [Worker-96] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /SpringProject/src/test/java
+2016-12-29 16:49:34,146 [Worker-96] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /SpringProject/src/test/resources
+2016-12-29 16:49:34,692 [Worker-96] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for SpringProject
+2016-12-29 16:49:34,698 [Worker-96] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 2 sec
+2016-12-29 16:49:36,447 [Worker-101] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-12-29 16:49:36,454 [Worker-101] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-12-29 16:49:36,458 [Worker-101] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-12-29 16:49:36,459 [Worker-101] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-12-29 16:49:36,459 [Worker-101] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of SpringProject
+2016-12-29 16:49:36,459 [Worker-101] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for SpringProject
+2016-12-29 16:49:36,480 [Worker-101] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-12-29 16:56:35,548 [Worker-108] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-12-29 16:56:35,551 [Worker-108] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-12-29 16:56:35,552 [Worker-108] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2016-12-29 16:56:35,555 [Worker-108] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2016-12-29 16:56:49,672 [Worker-108] INFO  o.e.m.i.launch.MavenLaunchDelegate - D:\New\SpringProject
+2016-12-29 16:56:49,673 [Worker-108] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B tomcat7:run
+2016-12-29 16:57:11,275 [main] INFO  o.e.m2e.actions.ExecutePomAction - Creating new launch configuration
+2016-12-29 16:57:23,549 [Worker-107] INFO  o.e.m.i.launch.MavenLaunchDelegate - D:\New\SpringProject
+2016-12-29 16:57:23,549 [Worker-107] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B tomcat7:run
+2016-12-29 16:58:03,618 [Worker-106] INFO  o.e.m.i.launch.MavenLaunchDelegate - D:\New\SpringProject
+2016-12-29 16:58:03,618 [Worker-106] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B tomcat7:run
+2017-01-06 12:18:45,635 [Worker-4674] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: LeaveManagementSystem:LMS:0.0.1-SNAPSHOT @ D:\LMS Project\LMS\pom.xml.
+2017-01-06 12:18:55,662 [Worker-4674] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /LMS/src/main/java
+2017-01-06 12:18:55,662 [Worker-4674] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /LMS/src/main/resources
+2017-01-06 12:18:55,663 [Worker-4674] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /LMS/src/test/java
+2017-01-06 12:18:55,663 [Worker-4674] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /LMS/src/test/resources
+2017-01-06 12:18:57,202 [Worker-4674] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 25 sec
+2017-01-06 12:19:07,414 [Worker-4679] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-01-06 12:19:07,683 [Worker-4679] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 8 resources
+2017-01-06 12:19:07,742 [Worker-4679] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-01-06 12:19:07,742 [Worker-4679] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-01-06 12:19:12,645 [main] INFO  o.e.m2e.actions.ExecutePomAction - Creating new launch configuration
+2017-01-06 12:19:20,238 [Worker-4674] INFO  o.e.m.i.launch.MavenLaunchDelegate - D:\LMS Project\LMS
+2017-01-06 12:19:20,238 [Worker-4674] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B tomcat7:run
+2017-01-06 12:22:30,231 [Worker-4680] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-01-06 12:22:30,242 [Worker-4680] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-01-06 12:22:30,244 [Worker-4680] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-01-06 12:22:30,246 [Worker-4680] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-01-06 12:23:07,855 [Worker-4680] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-01-06 12:23:07,857 [Worker-4680] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-01-06 12:23:07,863 [Worker-4680] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-01-06 12:23:07,865 [Worker-4680] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-01-06 12:23:28,361 [main] INFO  o.e.m2e.actions.ExecutePomAction - Using existing launch configuration
+2017-01-06 12:23:28,371 [Worker-4678] INFO  o.e.m.i.launch.MavenLaunchDelegate - D:\LMS Project\LMS
+2017-01-06 12:23:28,372 [Worker-4678] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B tomcat7:run
+2017-01-06 12:25:54,909 [Worker-4686] INFO  o.e.m.i.launch.MavenLaunchDelegate - D:\LMS Project\LMS
+2017-01-06 12:25:54,909 [Worker-4686] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B tomcat7:run
+2017-01-06 12:26:08,357 [Worker-4686] INFO  o.e.m.i.launch.MavenLaunchDelegate - D:\LMS Project\LMS
+2017-01-06 12:26:08,357 [Worker-4686] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B tomcat7:run
+2017-01-06 16:58:00,778 [Worker-4837] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-01-06 16:58:00,812 [Worker-4837] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-01-06 16:58:00,814 [Worker-4837] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-01-06 16:58:00,819 [Worker-4837] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-01-06 17:35:45,857 [main] INFO  o.e.m2e.actions.ExecutePomAction - Using existing launch configuration
+2017-01-06 17:35:45,863 [Worker-4856] INFO  o.e.m.i.launch.MavenLaunchDelegate - D:\LMS Project\LMS
+2017-01-06 17:35:45,864 [Worker-4856] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B tomcat7:run
+2017-01-09 12:43:31,070 [Worker-5863] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-01-09 12:43:31,075 [Worker-5863] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 9 resources
+2017-01-09 12:43:31,109 [Worker-5863] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-01-09 12:43:31,111 [Worker-5863] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-01-09 12:43:32,222 [Worker-5863] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-01-09 12:43:32,231 [Worker-5863] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 9 resources
+2017-01-09 12:43:32,235 [Worker-5863] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-01-09 12:43:32,241 [Worker-5863] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-01-09 12:43:50,880 [Worker-5871] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-01-09 12:43:50,881 [Worker-5871] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 9 resources
+2017-01-09 12:43:50,882 [Worker-5871] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-01-09 12:43:50,882 [Worker-5871] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-01-11 11:58:19,651 [Worker-6325] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-01-11 11:58:19,681 [Worker-6325] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-01-11 11:58:19,681 [Worker-6325] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-01-11 11:58:19,681 [Worker-6325] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-01-19 15:36:43,056 [Worker-2] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: LeaveManagementSystem:LMS:0.0.1-SNAPSHOT @ D:\LMS Project\LMS\pom.xml.
+2017-01-19 15:36:50,400 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-01-19 15:36:50,406 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 9 resources
+2017-01-19 15:36:50,478 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-01-19 15:36:50,479 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource

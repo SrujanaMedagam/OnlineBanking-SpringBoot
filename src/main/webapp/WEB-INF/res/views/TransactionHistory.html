@@ -1,0 +1,83 @@
+<script src="resources/js/dirPagination.js"></script>
+<script
+	src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.10.0.js"
+	type="text/javascript"></script>
+	
+<div ng-controller="homePageController">
+	<div class="container" class="col-sm-12">
+		<div class="row">
+			<div class="col-sm-2">
+				<div class="homepage1">
+					<h4 style="margin-left: 5px;">WELCOME BACK</h4>
+					<div class="list-group">
+						<a href="#/myProfile" class="list-group-item"
+							ng-click="myprofile()">MyPofile</a> <a href="#/accountDetails"
+							class="list-group-item" ng-click="accDetails()"
+							ng-model="AccountDetails">AccountDetails</a> <a
+							href="#/fundsTransfer" class="list-group-item"
+							ng-click="onTransfer()">Transfer Money</a> <a
+							href="#/depositMoney" class="list-group-item"
+							ng-click="onDeposit()">Deposit Money</a> <a
+							href="#/withdrawMoney" class="list-group-item"
+							ng-click="onWithdraw()">Withdraw Money</a> <a
+							href="#/TransactionHistory" class="list-group-item"
+							ng-click="onTransactionHistory()">Transaction History</a>
+					</div>
+					<button style="margin-top: 15px; margin-left: 80px;"
+						class="btn btn-success" id="submitBtn" ng-click="logout()">LOG
+						OUT</button>
+				</div>
+				<div class="col-sm-8">
+					<div class="homepage2">
+						<h3 style="margin-top: 30px; margin-left: 300px;">TransactionHistory</h3>
+						<div id="showTransactionHistoryDetails"
+							ng-controller="showTransactionHistoryDetailsController"
+							class="form-group">
+							<table class="table main_table table-striped table-hover"
+								width="100%" cellpadding="0" cellspacing="0" border="0">
+								<thead>
+									<tr>
+										<th>AccountNumber</th>
+										<th>TransactionDate</th>
+										<th>Amount</th>
+										<th>TransactionType</th>
+										<th>ToAccount</th>
+										<th>BalanceAmount</th>
+										<th>Remarks</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr
+										ng-repeat="history in filtered = transactionHistory  | limitTo:entryLimit  ">
+										<td>{{ history.accountNumber}}</td>
+										<td>{{ history.transactionDate}}</td>
+										<td>{{ history.amount}}</td>
+										<td>{{ history.transactionType}}</td>
+										<td>{{ history.toAccount}}</td>
+										<td>{{ history.balanceAmount}}</td>
+										<td>{{ history.remarks}}</td>
+									</tr>
+								<tbody>
+							</table>
+							<!-- <div>
+								<ul class="pagination" style="margin-top: 30px; margin-left: 300px;">
+									<li><a href="#">&laquo;</a></li>
+									<li><a href="#/TransactionHistory" ng-click="pagination1()">1</a></li>
+									<li><a href="#">2</a></li>
+									<li><a href="#">3</a></li>
+									<li><a href="#">4</a></li>
+									<li><a href="#">5</a></li>
+									<li><a href="#">&raquo;</a></li>
+								</ul>
+							</div> -->
+							
+							<!-- <pagination page="currentPage" max-size="noOfPages" total-items="totalItems" items-per-page="entryLimit"></pagination> -->
+							<dir-pagination-controls boundary-links="true"
+								on-page-change="pageChangeHandler(newPageNumber)"
+								template-url=""></dir-pagination-controls>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>

@@ -1,0 +1,130 @@
+<div ng-controller="homePageController" >
+
+<div class="container" class="col-sm-12" >
+<div class="row">
+<div class="col-sm-2">
+<div class="homepage1">
+
+  <h4 style=";margin-left:5px;">WELCOME BACK</h4>
+  <div class="list-group">
+  <a href="#/myProfile" class="list-group-item"
+							ng-click="myprofile()">MyPofile</a>
+   <a href="#/accountDetails" class="list-group-item" ng-click="accDetails()" ng-model="AccountDetails">AccountDetails</a>
+   <a href="#/fundsTransfer" class="list-group-item" ng-click="onTransfer()">Transfer Money</a>
+   <a href="#/depositMoney" class="list-group-item" ng-click="onDeposit()">Deposit Money</a>
+   <a href="#/withdrawMoney" class="list-group-item" ng-click="onWithdraw()">Withdraw Money</a> 
+   <a href="#/TransactionHistory" class="list-group-item" ng-click="onTransactionHistory()">Transaction History</a>
+</div>
+
+<button style="margin-top:15px;margin-left:80px;" class="btn btn-success" id="submitBtn" ng-click="logout()">LOG OUT</button>
+</div>
+
+<div class="col-sm-8">
+<div class="homepage2">
+
+<h4 style="margin-top:30px;margin-left:150px;">Account Details</h4>
+<div id="showAccountDetails"
+	ng-controller="showAccountDetailsController">
+	<table>
+	 <tr>
+	<td ><label class="labels" style="margin-top:20px;margin-left:80px;" for="comment">AccountNumber</label><td>
+	<td ><h4 style="margin-top:20px;margin-left:80px;" id="accountNumber"></h4><td>
+	</tr>
+	<!-- <tr>
+	<td><label class="labels" style="margin-top:20px;margin-left:80px;" for="comment">AccountName</label><td>
+	<td><h4 style="margin-top:20px;margin-left:80px;" id="accountName"></h4><td>
+	</tr> -->
+	<tr>
+	<td> <label class="labels" style="margin-top:20px;margin-left:80px;" for="comment">TotalAmount</label><td>
+	<td><h4 style="margin-top:20px;margin-left:80px;" id="amount"></h4><td>
+	</tr>
+	<tr>
+	<td> <label class="labels" style="margin-top:20px;margin-left:80px;" for="comment">AccountType</label><td>
+	<td><h4 style="margin-top:20px;margin-left:80px;" id="accountType"></h4><td>
+	</tr>
+	<tr>
+	<td> <label class="labels" style="margin-top:20px;margin-left:80px;" for="comment">AccountOpenDate</label><td>
+	<td><h4 style="margin-top:20px;margin-left:80px;" id="accountOpenDate"></h4><td>
+	</tr> 
+	</table>
+	</div>
+</div>
+</div>
+  </div>
+</div>
+</div>
+<div>
+
+
+
+
+
+
+<!-- h4>Account Details Page</h4>
+<div id="showAccountDetails"
+	ng-controller="showAccountDetailsController" class="form-group">
+	<table>
+	 <tr>
+	<td>Account Number :<td>
+	<td><h4 id="accountNumber"></h4><td>
+	</tr>
+	<tr>
+	<td>Account Namer :<td>
+	<td><h4 id="accountName"></h4><td>
+	</tr>
+	<tr>
+	<td>Amount :<td>
+	<td><h4 id="amount"></h4><td>
+	</tr> 
+	
+	<thead>
+      <tr>
+        <th> AccountNumber </th>
+        <th> AccountName </th>
+        <th> Amount </th>
+       </tr>
+    </thead>
+     <tbody>
+  <tr>
+    <td><h4 id="accountNumber"></td></br>
+     <td><h4 id="accountName"></td></br>
+      <td><h4 id="amount"></td></br>
+     
+   
+  </tr>
+  <tbody>
+	
+	</table>
+
+
+<p id="demo1">
+		AccountNumber:{{accNumber}}>
+       	AccountName:{{accName}}
+       Balance:{{balance}}
+        
+        
+        
+<table class="table main_table table-striped table-hover"  width="100%" cellpadding="0" cellspacing="0" border="0">
+ <thead>
+      <tr>
+        <th>AccountNumber</th>
+        <th>AccountName</th>
+        <th>Balance</th>
+       </tr>
+    </thead>
+    <tbody>
+  <tr ng-repeat="acc in accountDetailsList">
+    <td>{{ acc.accNumber}}</td></br>
+     <td>{{ acc.accName}}</td></br>
+      <td>{{ acc.balance}}</td></br>
+     
+   
+  </tr>
+  <tbody>
+</table>
+<ul ng-repeat="acc in accountDetailsList">
+		<li>AccountNumber:{{ acc.accNumber}}</li>
+       	<li>AccountName:{{ acc.accName}}</li>
+        <li>Balance:{{ acc.balance}}</li>
+        </ul>
+</div> -->

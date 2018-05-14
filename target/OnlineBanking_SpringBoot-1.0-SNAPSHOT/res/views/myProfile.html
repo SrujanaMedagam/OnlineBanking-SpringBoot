@@ -1,0 +1,114 @@
+<div ng-controller="homePageController">
+
+	<div class="container" class="col-sm-12">
+		<div class="row">
+			<div class="col-sm-2">
+				<div class="homepage1">
+
+					<h4 style=";margin-left:5px;">WELCOME BACK</h4>
+					<div class="list-group">
+						<a href="#/myProfile" class="list-group-item"
+							ng-click="myprofile()">MyPofile</a>
+							 <a href="#/accountDetails"
+							class="list-group-item" ng-click="accDetails()">AccountDetails</a>
+						<a href="#/fundsTransfer" class="list-group-item"
+							ng-click="onTransfer()">Transfer Money</a> 
+							<a href="#/depositMoney" class="list-group-item"
+							ng-click="onDeposit()">Deposit Money</a> <a
+							href="#/withdrawMoney" class="list-group-item"
+							ng-click="onWithdraw()">Withdraw Money</a> <a
+							href="#/TransactionHistory" class="list-group-item"
+							ng-click="onTransactionHistory()">Transaction History</a>
+
+					</div>
+					<!-- <a href="#/myProfile" class="list-group-item"
+						ng-click="myprofile()">MY PROFILE</a>
+ -->
+					<button style="margin-top: 15px; margin-left: 80px;"
+						class="btn btn-success" id="submitBtn" ng-click="logout()">LOG
+						OUT</button>
+				</div>
+
+				<div class="col-sm-8">
+					<div class="homepage2">
+						<h3 style="font-family: Georgia; margin-left: 200px;">MyProfile
+						</h3>
+						<form action="">
+							<div ng-controller="myProfileController">
+
+								<table>
+									<tr>
+										<td><label class="labels"
+											style="margin-top: 20px; margin-left: 80px;" for="comment">AccountNumber</label>
+										<td>
+										<td><h4 style="margin-top: 20px; margin-left: 80px;"
+												id="accountNumber"></h4>
+										<td>
+									</tr>
+									<!-- <tr>
+										<td><label class="labels"
+											style="margin-top: 20px; margin-left: 80px;" for="comment">AccountName</label>
+										<td>
+										<td><h4 style="margin-top: 20px; margin-left: 80px;"
+												id="accountName"></h4>
+										<td>
+									</tr> -->
+									<tr>
+										<td><label class="labels"
+											style="margin-top: 20px; margin-left: 80px;" for="comment">Address</label>
+										<td>
+										<td><h4 style="margin-top: 20px; margin-left: 80px;"
+												id="address"></h4>
+										<td>
+											<!-- <td> <a href="#/updateProfile" style="color:red;"" ng-click="updateAddress()">Update</a><td> -->
+									</tr>
+									<tr>
+										<td><label class="labels"
+											style="margin-top: 20px; margin-left: 80px;" for="comment">EmailId</label>
+										<td>
+										<td><h4 style="margin-top: 20px; margin-left: 80px;"
+												id="emailId"></h4>
+										<td>
+									</tr>
+									<tr>
+										<td><label class="labels"
+											style="margin-top: 20px; margin-left: 80px;" for="comment">PhoneNumber</label>
+										<td>
+										<td><h4 style="margin-top: 20px; margin-left: 80px;"
+												id="phoneNumber"></h4>
+										<td>
+									</tr>
+									<tr>
+										<td><label class="labels"
+											style="margin-top: 20px; margin-left: 80px;" for="comment">PanNumber</label>
+										<td>
+										<td><h4 style="margin-top: 20px; margin-left: 80px;"
+												id="panNumber"></h4>
+										<td>
+									</tr>
+									<tr>
+										<td><label class="labels"
+											style="margin-top: 20px; margin-left: 80px;" for="comment">AadharNumber</label>
+										<td>
+										<td><h4 style="margin-top: 20px; margin-left: 80px;"
+												id="aadharNumber"></h4>
+										<td>
+									</tr>
+									<tr>
+										<td><label class="labels"
+											style="margin-top: 20px; margin-left: 80px;" for="comment">AccountOpenDate</label>
+										<td>
+										<td><h4 style="margin-top: 20px; margin-left: 80px;"
+												id="accountOpenDate"></h4>
+										<td>
+									</tr>
+
+									</div>
+									</form>
+
+									</div>
+									</div>
+									</div>
+									</div>
+									</div>
+									</div>

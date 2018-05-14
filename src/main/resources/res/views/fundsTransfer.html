@@ -1,0 +1,100 @@
+<div ng-controller="homePageController">
+
+	<div class="container" class="col-sm-12">
+		<div class="row">
+			<div class="col-sm-2">
+				<div class="homepage1">
+
+					<h4 style=";margin-left:5px;">WELCOME BACK</h4>
+					<div class="list-group">
+					<a href="#/myProfile" class="list-group-item"
+							ng-click="myprofile()">MyPofile</a>
+						<a href="#/accountDetails" class="list-group-item"
+							ng-click="accDetails()" ng-model="AccountDetails">AccountDetails</a>
+						<a href="#/fundsTransfer" class="list-group-item"
+							ng-click="onTransfer()">Transfer Money</a> <a
+							href="#/depositMoney" class="list-group-item"
+							ng-click="onDeposit()">Deposit Money</a> <a
+							href="#/withdrawMoney" class="list-group-item"
+							ng-click="onWithdraw()">Withdraw Money</a> <a
+							href="#/TransactionHistory" class="list-group-item"
+							ng-click="onTransactionHistory()">Transaction History</a>
+
+					</div>
+
+					<button style="margin-top: 15px; margin-left: 80px;"
+						class="btn btn-success" id="submitBtn" ng-click="logout()">LOG
+						OUT</button>
+				</div>
+
+				<div class="col-sm-8">
+					<div class="homepage2">
+						<h3 style="font-family: Georgia; margin-left: 200px;">FundsTransfer</h3>
+						<form action="">
+							<div ng-controller="fundsTransferController">
+								<table>
+									<tr>
+										<td><label class="labels"
+											style="margin-top: 20px; margin-left: 80px;" for="comment">AccountNumber</label></td>
+										<td><input style="margin-top: 30px; margin-left: 70px;"
+											type="text" class="form-control" id="accountNumber"
+											ng-model="accountNumber" /></td>
+									<tr>
+									<td><span id="123"
+											style="color: red; margin-top: 10px; margin-left: 30px;"></span></td>
+										<td><span id="checkAccNumberIderrorMessage"
+											style="color: red; display: none; margin-top: 10px; margin-left: 70px;">AccountNumber
+												Doesn't exists</span></td>
+									</tr>
+									</tr>
+									<tr>
+										<td><label class="labels"
+											style="margin-top: 10px; margin-left: 80px;" for="comment">Transfer
+												Amount</label></td>
+										<td><input style="margin-top: 10px; margin-left: 70px;"
+											type="text" class="form-control" id="amount"
+											ng-model="amount" ng-click="isValidAccountNumber()" /></td>
+									</tr>
+									<tr>
+										<td><label class="labels"
+											style="margin-top: 30px; margin-left: 80px;" for="comment">Transfer
+												Date</label></td>
+										<td><input style="margin-top: 30px; margin-left: 70px;"
+											type="date" class="form-control" id="date" ng-model="date" /></td>
+									</tr>
+									<tr>
+										<td><label class="labels"
+											style="margin-top: 30px; margin-left: 80px;" for="comment">Remarks</label></td>
+										<td><input style="margin-top: 30px; margin-left: 70px;"
+											type="text" class="form-control" id="remarks"
+											ng-model="remarks" /></td>
+									</tr>
+									<br>
+									<tr>
+										<td><label class="labels"
+											style="margin-top: 30px; margin-left: 80px;" for="comment"></label></td>
+										<td align="right"><button
+												style="margin-top: 20px; margin-left: 90px;"
+												class="btn btn-success" id="submitBtn"
+												ng-click="onTransferfunds()">Transfer</button></td>
+										<td align="right"><input
+											style="margin-top: 20px; margin-left: 5px;" id="reset"
+											type="reset" class="btn btn-success" /></td>
+									</tr>
+								</table>
+							</div>
+						</form>
+					</div>
+
+
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+
+
+
+
+

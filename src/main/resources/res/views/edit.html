@@ -1,0 +1,95 @@
+h1>Employee Details</h1>
+<div id="showAllDetailsFromAdmin"
+	ng-controller="showAllDetailsFromAdminController" class="form-group"
+	data-ng-init="init()">
+	<table class="table main_table table-striped table-hover" width="100%"
+		cellpadding="0" cellspacing="0" border="0">
+		<thead>
+			<tr>
+				<th>Employee Id</th>
+				<th>Employee Name</th>
+				<th>Role</th>
+				<th>Email</th>
+				<th>Manager</th>
+			</tr>
+		</thead>
+		<tbody>
+			<!--  <tr ng-repeat="emp in employeeList">
+ 	<td>{$index}</td>
+    <td>{{ emp.empId }}</td>
+    <td>{{ emp.empName }}</td>
+    <td>{{ emp.role }}</td>
+    <td>{{ emp.email }}</td>
+    <td>{{ emp.manager }}</td>
+      </tr> -->
+
+
+			<tr ng-repeat="emp in employeeList">
+				<td><span ng-bind="emp.empId"></span></td>
+				<td><span ng-bind="emp.empName"></span></td>
+				<td><span ng-bind="emp.role"></span></td>
+				<td><span ng-bind="emp.email"></span></td>
+				<td><span ng-bind="emp.manager"></span></td>
+				<td>
+					<button type="button" class="btn btn-primary custom-width"
+						data-toggle="modal" ng-click="showEditForm(emp)"
+						data-target="#myModalNorm">Edit</button>
+					<div class="modal fade" id="myModalNorm" tabindex="-1"
+						role="dialog" aria-labelledby="myModalLabel">
+
+						<div class="modal-dialog">
+							<div class="modal-content">
+								<!-- Modal Header -->
+								<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal">
+										<span aria-hidden="true">&times;</span> <span class="sr-only">Close</span>
+									</button>
+									<h4 class="modal-title">Update Employee Record</h4>
+								</div>
+
+								<!-- Modal Body -->
+								<div class="modal-body">
+									<form role="form" id="form">
+										<div class="form-group">
+											<label for="EmployeeId">Employee Id</label> <input
+												type="text" class="form-control" model="empIdInput"
+												id="empIdInput" readonly />
+										</div>
+										<div class="form-group">
+											<label for="EmployeeName">Employee Name</label> <input
+												type="text" class="form-control" model="employeeNameInput"
+												id="employeeNameInput" placeholder="Employee Name" />
+										</div>
+										<div class="form-group">
+											<label for="role">Role</label> <input type="text"
+												class="form-control" model="roleInput" id="roleInput"
+												placeholder="Role" />
+										</div>
+										<div class="form-group">
+											<label for="exampleInputEmail1">Email address</label> <input
+												type="email" class="form-control" model="emailInput"
+												id="emailInput" placeholder="chandu@gmail.com" />
+										</div>
+										<div class="form-group">
+											<label for="manager">Manager</label> <input type="email"
+												class="form-control" model="managerInput" id="managerInput"
+												placeholder="Manager ID" />
+										</div>
+										<button type="button" class="btn btn-default"
+											data-dismiss="modal">Close</button>
+										<button type="button" class="btn btn-primary"
+											data-dismiss="modal" ng-click="updateRow()">update</button>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</td>
+				<td>
+					<button type="button" ng-click="deleteRow(emp.empId)"
+						class="btn btn-danger custom-width">Delete</button>
+				</td>
+			</tr>
+		<tbody>
+	</table>
+</div>

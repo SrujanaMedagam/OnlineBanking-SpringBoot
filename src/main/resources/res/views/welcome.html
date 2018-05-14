@@ -1,0 +1,22 @@
+<!-- <h2 style="font-family:Georgia;text-align: center;">PLEASE LOGIN</h2> -->
+<div ng-controller="loginController" class="welcome">
+<h3 style="font-family:Georgia;text-align: center;">Login to Internet Banking</h3>
+<table>
+<tr style="font-family:Georgia;text-align: center;">
+<td><label class="labels" style="margin-top:10px;margin-left: 40px" for="comment" >     User ID	</label></td>
+<td><input style="margin-top:10px;" type="text" class="form-control" id="username" name="username" ng-model="username" /></td>
+</tr>
+<tr style="font-family:Georgia;text-align: center;">
+<td><label class="labels" style="margin-top:10px;margin-left: 40px" for="comment">    Password	</label></td>
+<td><input style="margin-top:10px;" type="password" class="form-control"  id="password" name="password" ng-model="password" /></td>
+</tr>
+<tr>
+<td style="margin-left:40px;><button style="margin-left:40px;" class="btn btn-success" id="submitBtn" ng-click="submit()">Login</button></td>
+</tr>
+</table>
+
+<A style="margin-left:40px;" href="" ng-click="urlSubmit()">New User? Register Now</A>
+</div>
+
+
+	
